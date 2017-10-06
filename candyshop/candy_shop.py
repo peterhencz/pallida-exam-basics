@@ -28,13 +28,13 @@ print(candy_shop)
 candy_shop.sell("candy", 1)
 print(candy_shop
 # Should print out:
-# "Invetory: 1 candies, 2 lollipops, Income:20, Sugar: 285gr"
+# "Invetory: 1 candies, 2 lollipops, Income:20, Sugar: 270gr"
 candy_shop.raise_prices(5)
 candy_shop.sell("lollipop", 1)
 print(candy_shop)
 # Should print out:
-# "Invetory: 1 candies, 1 lollipops, Income:35, Sugar: 285gr"
+# "Invetory: 1 candies, 1 lollipops, Income:30.5, Sugar: 270gr"
 candy_shop.buy_sugar(300)
 print(candy_shop)
 # Should print out:
-# "Invetory: 1 candies, 1 lollipops, Income:5, Sugar: 315gr"
+# "Invetory: 1 candies, 1 lollipops, Income:5, Sugar: 570gr"
