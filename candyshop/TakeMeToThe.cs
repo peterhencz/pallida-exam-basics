@@ -35,16 +35,16 @@ namespace TakeMeToThe
             candyShop.Sell(CandyShop.CANDY, 1);
             candyShop.PrintInfo();
             // Should print out:
-            // "Invetory: 1 candies, 2 lollipops, Income: 20$, Sugar: 285gr"
+            // "Invetory: 1 candies, 2 lollipops, Income: 20$, Sugar: 270gr"
             candyShop.Raise(5);
             candyShop.Sell(CandyShop.LOLLIPOP, 1);
             candyShop.PrintInfo();
             // Should print out:
-            // "Invetory: 1 candies, 1 lollipops, Income: 35$, Sugar: 285gr"
+            // "Invetory: 1 candies, 1 lollipops, Income: 30.5$, Sugar: 270gr"
             candyShop.BuySugar(300);
             candyShop.PrintInfo();
             // Should print out:
-            // "Invetory: 1 candies, 1 lollipops, Income: 5$, Sugar: 315gr"
+            // "Invetory: 1 candies, 1 lollipops, Income: 5$, Sugar: 570gr"
         }
     }   
 }
