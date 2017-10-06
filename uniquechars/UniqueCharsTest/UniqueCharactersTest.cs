@@ -33,5 +33,14 @@ namespace UniqueCharsTest
             var output = new List<char>() { 'A', 'n', 'g', 'r', 'm'};
             Assert.AreEqual(output, uniqueCharacter.UniqueCharacters(input));
         }
+
+        [Test]
+        public void AddToList_WhenTwoWords_ThenWhiteSpaceDontCount()
+        {
+            string input = "alpaga pallida";
+            var output = new List<char>() { 'g', 'i', 'd' };
+            Assert.AreEqual(output, uniqueCharacter.UniqueCharacters(input));
+        }
+
     }
 }

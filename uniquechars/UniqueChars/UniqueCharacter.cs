@@ -31,7 +31,7 @@ namespace UniqueChars
 
             foreach (var pair in countChars)
             {
-                if (pair.Value == 1)
+                if (pair.Value == 1 && pair.Key != ' ')
                 {
                     uniqueList.Add(pair.Key);
                 }
