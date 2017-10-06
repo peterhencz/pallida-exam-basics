@@ -7,7 +7,6 @@ namespace FavouriteAnimals
     class Animals
     {
         static string pathToFavourites = @"../../favourites.txt";
-        string[] contentOfFavourites = File.ReadAllLines(pathToFavourites);
 
         public void UsageInfo()
         {

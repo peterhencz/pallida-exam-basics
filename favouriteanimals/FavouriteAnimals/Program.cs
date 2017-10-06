@@ -23,7 +23,6 @@ namespace FavouriteAnimals
             if (args.Length == 0)
             {
                 animals.UsageInfo();
-                animals.ListAnimals();
             }
             else if (args.Length > 0)
             {
