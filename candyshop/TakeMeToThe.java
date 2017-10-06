@@ -34,7 +34,7 @@ public class TakeMeToThe {
         candyShop.sell(CandyShop.LOLLIPOP, 1);
         System.out.println(candyShop);
         // Should print out:
-        // "Invetory: 1 candies, 1 lollipops, Income: 35$, Sugar: 270gr"
+        // "Invetory: 1 candies, 1 lollipops, Income: 30.5$, Sugar: 270gr"
         candyShop.buySugar(300);
         System.out.println(candyShop);
         // Should print out:
