@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace UniqueChars
 {
@@ -17,30 +14,26 @@ namespace UniqueChars
         public List<char> UniqueCharacters (string input)
         {
             var uniqueList = new List<char>();
-
             char[] characters = input.ToCharArray();
             var countChars = new Dictionary<char, int>();
 
-            if (input != null)
+            foreach (var character in characters)
             {
-                foreach (var character in characters)
+                if (!countChars.ContainsKey(character))
                 {
-                    if (!countChars.ContainsKey(character))
-                    {
-                        countChars.Add(character, 1);
-                    }
-                    else
-                    {
-                        countChars[character]++;
-                    }
+                    countChars.Add(character, 1);
                 }
-
-                foreach (var pair in countChars)
+                else
                 {
-                    if (pair.Value == 1)
-                    {
-                        uniqueList.Add(pair.Key);
-                    }
+                    countChars[character]++;
+                }
+            }
+
+            foreach (var pair in countChars)
+            {
+                if (pair.Value == 1)
+                {
+                    uniqueList.Add(pair.Key);
                 }
             }
 

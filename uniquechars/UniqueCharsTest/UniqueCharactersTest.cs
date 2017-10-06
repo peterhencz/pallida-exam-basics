@@ -1,9 +1,6 @@
 ﻿using NUnit.Framework;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using UniqueChars;
 
 namespace UniqueCharsTest
@@ -26,6 +23,14 @@ namespace UniqueCharsTest
         {
             string input = string.Empty;
             var output = new List<char>();
+            Assert.AreEqual(output, uniqueCharacter.UniqueCharacters(input));
+        }
+
+        [Test]
+        public void AddToList_WhenAnagramUpperCase_ThenAngrm()
+        {
+            string input = "Anagram";
+            var output = new List<char>() { 'A', 'n', 'g', 'r', 'm'};
             Assert.AreEqual(output, uniqueCharacter.UniqueCharacters(input));
         }
     }
