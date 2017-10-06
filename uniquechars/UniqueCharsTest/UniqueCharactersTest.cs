@@ -20,5 +20,13 @@ namespace UniqueCharsTest
             var output = new List<char>() { 'n', 'g', 'r', 'm' };
             Assert.AreEqual(output, uniqueCharacter.UniqueCharacters(input));
         }
+
+        [Test]
+        public void AddToList_WhenEmptyString_ThenEmptyList()
+        {
+            string input = string.Empty;
+            var output = new List<char>();
+            Assert.AreEqual(output, uniqueCharacter.UniqueCharacters(input));
+        }
     }
 }
