@@ -8,7 +8,7 @@ namespace UniqueCharsTest
     [TestFixture]
     public class UniqueCharactersTest
     {
-        UniqueCharacter uniqueCharacter = new UniqueCharacter();
+        Unique uniqueCharacter = new Unique();
 
         [Test]
         public void AddToList_WhenAnagram_ThenNgrm ()
