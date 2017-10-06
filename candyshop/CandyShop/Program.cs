@@ -11,6 +11,7 @@ namespace CandyShop
         static void Main(string[] args)
         {
             CandyShop candyShop = new CandyShop(300, 100);
+            candyShop.PrintInfo();
         }
     }
 }

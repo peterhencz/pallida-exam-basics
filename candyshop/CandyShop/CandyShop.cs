@@ -8,11 +8,12 @@ namespace CandyShop
 {
     class CandyShop
     {
-        private int income;
+        private double income;
         private int sugar;
         List<Sweets> sweetList;
+        Sweets sweet = new Sweets();
 
-        public CandyShop(int income, int sugar)
+        public CandyShop(double income, int sugar)
         {
             this.income = income;
             this.sugar = sugar;
@@ -33,22 +34,29 @@ namespace CandyShop
             int numberOfCandies = 0;
             int numberOfLollipops = 0;
 
+            for (int i = 0; i < sweetList.Count; i++)
+            {
+                //TODO
+            }
+
             return string.Format("Invetory: {0} candies, {1} lollipops, Income: {2}$, Sugar: {3}gr", numberOfCandies, numberOfLollipops, income, sugar);
         }
 
-        public void Sell (int amount)
+        public void Sell (Sweets sweet, int amount)
         {
-
+            //TODO
         }
 
         public void Raise (double number)
         {
-
+            //TODO
         }
 
-        public void BuySugar (int amount)
+        public void BuySugar (int amountOfSugar)
         {
-
+            double priceOfSugar = 0.1;
+            income -= amountOfSugar * priceOfSugar;
+            sugar += amountOfSugar; 
         }
     }
 }
