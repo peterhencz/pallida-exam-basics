@@ -31,12 +31,10 @@ namespace FavouriteAnimals
             {
                 using (StreamWriter writer = File.AppendText(path))
                 {
-                    writer.WriteLine(args[0]);
-
-                    //for (int i = 0; i < args.Length; i++)
-                    //{
-                    //    writer.WriteLine(args[i]);
-                    //}
+                    for (int i = 0; i < args.Length; i++)
+                    {
+                        writer.WriteLine(args[i]);
+                    }
                 }
             }
             catch
